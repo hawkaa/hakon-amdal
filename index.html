@@ -1,0 +1,286 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="node_modules/reveal/index.css">
+    <link rel="stylesheet" href="node_modules/reveal/theme/night.css">
+    <style>
+        .slides, .slides h1, .slides h2 {
+            text-shadow: 0 0 25px #000000;
+       }
+
+       .two.column {
+          display: flex;
+          align-items: flex-start;
+       }
+
+       .two.column > * {
+          flex-grow: 1;
+       }
+    </style>
+</head>
+<body>
+    <!--<link rel="import" href="slides.html">-->
+    <div class="reveal">
+        <div class="slides">
+            <section data-background="unsplash/piano.jpg">
+                <h2>Hvorfor lykkes jeg? Erfaringer fra en masterstudent.</h2>
+                <p>Håkon Åmdal</p>
+                <aside class="notes">
+                      Takk for epost, takk for at jeg fikk komme. 
+                      Hørte bare gratis lunsj, så da måtte jeg bare komme.
+                      Fikk tittel, se hva jeg kunne gjøre ut av det.
+                </aside>
+            </section>
+            <section>
+                <section>
+                    <div style="display:flex; align-items:flex-start">
+                        <img style="width: 25%; flex-grow: 1;"src="img/passport.jpg">
+                        <div style="flex-grow: 1;">
+                            <h2>Håkon Åmdal</h2>
+                            <p>-</p>
+                            <h4>Datateknikk, kull 2016</h4>
+                            <p>-</p>
+                            <h4>Komplekse datasystemer</h4>
+                            <p>-</p>
+                            <h4>Oppvokst i Bærum</h4>
+                            <p>-</p>
+                            <h4>Nerd</h4>
+                            <p>-</p>
+                            <h4>Elsker programmering!</h4>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        Jeg har noe kjennskap til noen av dere, i og med at jeg har gått på skolen her noen år, men sikkert ikke mange av dere som kjenner til meg, så benytter anledningen.
+                    </aside>
+                </section>
+                <section data-background="img/abakus.jpg">
+                    <h1>Frivillighet</h1>
+                    <aside class="notes">
+                        Gjort det ene og det andre i Abakus.
+                            Fagkom, som fyller på med faglig innhold fra bedrifter
+                            Abacash, betalingssystemet på kjelleren og kontoret.
+                            Fondstyret, bevilge penger
+                            Fun-fact om bilde: Få med google
+                        XCom
+                        Utmatrikuleringsfest
+                        Tydeligvis vansker for å si nei
+                    </aside>
+                </section>
+                <section data-background="img/minneapolis.jpg">
+                    <h1>University of Minnesota</h1> 
+                    <h2>2014-2015</h2> 
+                    <aside class="notes">
+                        Dro på fulbright-scholarship.
+                        Hadde bestemt meg for engelsktalende, så siktet jo mot USA. Ville bort fra vennene mine.
+                        Tungt i starten, ble bedre. Fryktelig leit å dra fra denne fantastiske byen.
+                        Venner fra hele verden.
+                        Skrev papers i 6 av 8 fag, mye trening.
+                    </aside>
+                </section>
+                <section data-background="unsplash/newspaper.jpg">
+                    <h2>Schibsted Products and Technology</h2>
+                </section>
+
+            </section>
+            <section>
+                <section data-background="unsplash/typewriter.jpg">
+                    <h2>Der modelldreven utvikling møter databaseteknologi</h2> 
+                </section>
+                <section data-background="#FFFFFF">
+                    <img src="img/genus.png">
+                    <h4 style="color: black;">Norgesgruppen skal analysere millioner av transaksjoner.</h4>
+                    <h4 style="color: black;">...og de vet ikke hva de leter etter.</h4>
+                </section>
+                <section data-background="unsplash/book.jpg">
+                    <aside class="notes">
+                        Innser at jeg ikke kan noe som helst.
+                        Veileder i genus vil ha på plass "suboptimaliseringer", men jeg må gi han teoretisk bakgrunn. Tror ikke han er så fornøyd med meg skal jeg være helt ærlig.
+                        Leverer en tykk blekke som inneholder alle teknikker hvordan gjøre analyse fort.
+                        Så kommer jula, han har lest den, og skjønt det.
+                        Helt blank på hva jeg skal gjøre til etter jul, men einar, helt gæren i hodet foreslår at vi bare kan bytte ut hele lagringssystemet til Genus App Platform
+                    </aside>
+                </section>
+                <section data-background="#FFFFFF">
+                    <h2 style="color: black;">Fra row-store til column-store</h2>
+                    <div class="two column">
+                        <img style="width: 50%;" src="img/gap-original-rows.png">
+                        <img style="width: 50%;" src="img/gap-bb-columns.png">
+                    </div>
+                    <aside class="notes">
+                        Går helt i kjernen og omdefinerer hvordan man lagrer data.
+                        Påfører komprimering og alle triksene i boka fra databaseteknologien
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Minneforbruk redusert med 65%</h2>
+                    <p>&nbsp;</p>
+                    <h2 class="fragment">55362ms -> 25ms (2200X)</h2>
+                    <aside class="notes">
+                        Endringen gjelder hele applikasjonen.
+                        Bratsberg lo godt da han sa jeg tenkte jeg kom til å greie 1000-gangern, men se her da :)
+                    </aside>
+                </section>
+                <section data-background="img/Bplustree.png">
+                    <aside class="notes">
+                        Det som er så kult, der jeg trodde jeg skulle tilbake til disse trauste B+-trærene til fagstaben i TDT4145 som antar at alt ligger på disk
+                        fortapt fra komplekse
+                    </aside>
+                </section>
+                <section data-background="img/Fivestagespipeline.png">
+                    <aside class="notes">
+                        Jobber mye mer med cache performance og CPU-nær programmering, for jeg er jo glad i det.
+                        Vi jobber med representasjon av datatyper, unngår branches og funksjonskall i indre looper osv.
+                    </aside>
+                </section>
+                <section data-background="unsplash/typewriter.jpg">
+                    <h2>Der modelldreven utvikling møter databaseteknologi</h2> 
+                    <h2>...og rammeverket optimaliserer uten at modellererne trenger å tenke på det.</h2> 
+                    <aside class="notes">
+                        For å oppsummere
+                        Mye som en kompilator tar vurderinger for deg, blir også Genus App Platform smartere og skal velge riktig lagringsformat.
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section data-background="unsplash/winter.jpg">
+                    <h1>Så hvorfor lykkes jeg?</h1>
+                    <aside class="notes">
+                        Det var Eivind som la denne tittelen på foredraget, så jeg tenkte jeg må jo få lov til å svare på det?
+                        Jeg har på mange måter lykkes. Jeg har fått gode karakterer, jeg har landet jobben jeg ønsket, og har et kjempestort nettverk med masse flinke mennesker, og ikke minst gode venner.
+                        Men hva er årsaken til det
+                    </aside>
+                </section>
+                <section data-background="unsplash/glasses.jpg">
+                    <h2>Hardt arbeid</h2>
+                    <aside class="notes">
+                        Må skuffe dere her, ingenting kommer gratis. Jeg har jobbet hardt for å komme til den posisjonen jeg er nå. 
+                    </aside>
+                </section>
+                <section data-background="unsplash/lamp.jpg">
+                    <h2>Nysgjerrighet</h2>
+                    <aside class="notes">
+                        Grunnen til at jeg greier å jobbe så hardt er nysgjerrighet.
+                        finnes to typer mennesker. De som ikke ønsker å snakke om hvordan eksamen gikk på eksamensfesten, også er det meg.
+                    </aside>
+                </section>
+                <section data-background="unsplash/lamp.jpg">
+                    <h2>Jobb smart</h2>
+                    <aside class="notes">
+                        For jeg har et snev av latskap i meg også, jeg gidder ikke alltid å gjøre mer enn jeg må.
+                    </aside>
+                </section>
+                <section data-background="unsplash/lamp.jpg">
+                    <h2>Eksamen er en vurderingsform som passer meg veldig bra</h2>
+                    <aside class="notes">
+                        Skal nevnes at det er ikke så veldig mange 
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section data-background="unsplash/newspaper.jpg">
+                    <h1>Erfaringer</h1>
+                    <aside class="notes">
+                    </aside>
+                </section>
+                <section data-background="unsplash/glasses.jpg">
+                    <h2>Jo mer du har å gjøre, jo mer får du gjort</h2>
+                    <aside class="notes">
+                    </aside>
+                </section>
+                <section data-background="unsplash/newspaper.jpg">
+                    <h2>Hardt arbeid over tid gjør ting enklere</h2>
+                    <aside class="notes">
+                    </aside>
+                </section>
+                <section data-background="unsplash/newspaper.jpg">
+                    <h2>Å gå i forelesninger er latskap</h2>
+                    <h2 class="fragment">...hvis du har selvdisiplin.</h2>
+                    <aside class="notes">
+                        Hadde ikke disiplin nok, så jeg var ofte å finne i forelesninger.
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section data-background="unsplash/newspaper.jpg">
+                    <h1>Triks i ludo</h1>
+                    <aside class="notes">
+                    </aside>
+                </section>
+                <section data-background="unsplash/glasses.jpg">
+                    <h2>Bruk alle anledninger til å lære deg noe nytt</h2>
+                    <aside class="notes">
+                        
+                    </aside>
+                </section>
+                <section data-background="unsplash/glasses.jpg">
+                    <h2>Bruk løsningsforslaget aktivt</h2>
+                    <aside class="notes">
+                        Tullete når det ikke en gang er tallsvar. Handler om disiplin.
+                        Snakket med noen 2.-klassinger, og de sa at noen øvinger var så vanskelige at det var umulig å løse uten LF.
+                    </aside>
+                </section>
+                <section data-background="unsplash/glasses.jpg">
+                    <h2>Lær deg verktøyene dine</h2>
+                    <aside class="notes">
+                        Vim, IDEer etc
+                    </aside>
+                </section>
+                <section data-background="unsplash/glasses.jpg">
+                    <h2>Les pensum før/etter forelesning</h2>
+                    <aside class="notes">
+                        Dere ventet på den her, gjorde dere ikke?
+                        Har ingenting med å være "flink pike" eller noe, vi har kommet tilbake til å jobbe smart. For man sitter faktisk igjen med en hel del mer.
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section data-background="unsplash/newspaper.jpg">
+                    <h1>Time management</h1>
+                    <aside class="notes">
+                    </aside>
+                </section>
+                <section data-background="unsplash/glasses.jpg">
+                    <h2>Inbox Zero</h2>
+                    <aside class="notes">
+                        Hvis dere ønsker at jeg skal holde kurs for dere i 
+                    </aside>
+                </section>
+                <section data-background="unsplash/glasses.jpg">
+                    <h2>Prosjektstruktur</h2>
+                    <aside class="notes">
+                    </aside>
+                </section>
+                <section data-background="unsplash/glasses.jpg">
+                    <h2>Sunrise Calendar</h2>
+                    <aside class="notes">
+                    </aside>
+                </section>
+                <section data-background="unsplash/glasses.jpg">
+                    <h2>Wunderlist</h2>
+                    <aside class="notes">
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section data-background="unsplash/newspaper.jpg">
+                    <h1>Ros</h1>
+                    <aside class="notes">
+                    </aside>
+                </section>
+                <section data-background="unsplash/glasses.jpg">
+                    <h2>Klasserepresentant</h2>
+                    <aside class="notes">
+                    </aside>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src="node_modules/reveal/index.js"></script>
+    <script>
+        Reveal.initialize({
+            history: true,
+            transition: 'zoom'
+        }); 
+    </script>
+</body>
+</html>
